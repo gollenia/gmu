@@ -1,6 +1,6 @@
 <?php
 
-function camp_shortcode( $atts ) {
+function camps_shortcode( $atts ) {
    $attributes = shortcode_atts( array(
       'id' => 0,
       'limit' => 10
@@ -9,7 +9,7 @@ function camp_shortcode( $atts ) {
 
 
    if (class_exists('EM_Events')) {
-       $hollidays = EM_Events::get(array('limit'=>1,'orderby'=>'date', 'category' => 'freizeit'));
+       $hollidays = EM_Events::get(array('orderby'=>'date', 'category' => 'freizeit'));
    }
 
    $camps = array();

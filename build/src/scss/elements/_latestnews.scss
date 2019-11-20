@@ -32,3 +32,37 @@
   // Auf Smartphones
   @include media-breakpoint-down(sm) { }
 }
+
+
+.camp {
+  background: #fff;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+  color: $body-color;
+  .image {
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: theme-color("primary");
+  }
+
+  color: $dark-gray;
+  
+  .title {
+    font-weight: bold;
+  }
+
+  .date {
+    color: $gray-600;
+    text-transform: uppercase;
+  }
+ 
+  margin-bottom: 10px;
+  display: block;
+  
+  // Auf Smartphones
+  @include media-breakpoint-down(sm) { }
+}

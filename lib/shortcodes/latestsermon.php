@@ -11,7 +11,7 @@ function latestsermon_shortcode( $atts ) {
    $series = get_terms( 'wpfc_sermon_series' ); 
    $query = new WP_Query(array( 'posts_per_page' => $a['limit'], 'post_type' => 'wpfc_sermon', 'post_status' => 'publish'));
    $posts = $query->posts;
-   var_dump($a['limit']);
+   
    foreach($posts as $post) {
       $sermon = array();
       $meta = get_post_meta( $post->ID );

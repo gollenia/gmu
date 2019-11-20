@@ -1,29 +1,33 @@
-<div class="camps ">
 
 
-    <div class="row">
 
+<div class="camps">
+  
+  <div class="card-columns">
 
     {% for camp in camps %}
-    <div class="col col-md-6">
+    {# <div class="news-item col col-12 col-lg-{{12 / cols}}"> #}
     
-      <div class="image" style="height: 200px; background-image: url('{{camp.image.src}}'")>
-          <span>{{camp.location}}</span>
-      </div>
+        <a href="{{camp.guid}}" class="card camp">
+          {% if camp.image.abs_url %}<img class="card-img-top cover" src="{{camp.image.abs_url}}" alt="">{% endif %}
+          {# <div class="col col-12">
+            <a href="{{camp.url}}" style="display: block; height: 200px; background-image: url('{{camp.image.abs_url}}'); background-position: center; background-size: cover" class=""></a>
+          </div> #}
+          <div class="card-body">
+            <span class="h4" href="{{camp.guid}}"><h4 class="card-title no-line">{{camp.title}}</h4></span>
+            <p class="card-text">{{camp.details}}</p>
+            <span class="small upper gray">{{camp.start|date(j. F)}} bis {{camp.end|date(j. F)}}</span>
+            <p class="card-text"></p>
+            
+          </div>
+          {# <div class="col col-12">
+            <a class="h4" href="{{camp.guid}}">{{camp.title}}</a><br>
+            <span class="small upper gray">{{camp.start|date(j. F)}} bis {{camp.end|date(j. F)}}</span>
+            <p>{{camp.excerpt}}</p>
+          </div> #}
+        </a>
 
-
-      <div class="details">
-
-      
-        <a href="{{camp.guid}}" ><h3>{{camp.title}}</h3></a>
-        <span>{{camp.start|date(j. F)}} bis {{camp.end|date(j. F)}}</span>
-        <br><span>{{camp.post_excerpt}}</span>
-      
-      </div>
-
-    </div>
     {% endfor %}
-
-</div>
-
   </div>
+  
+</div>
