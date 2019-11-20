@@ -1,0 +1,25 @@
+<div class="featured-events ">
+
+
+    {% for event in events %}
+    <a href="{{event.guid}}" class="event" style="background-image: url('{{images[loop.index0].src}}')">
+    <div class="layer">
+    <div class="row">
+       <div class="date col-sm-auto col">
+        <h2 class="day">{{event.start|date("j")}}</h2>
+        <span class="month">{{event.start|date('M')}}</span>
+      </div>
+      <div class="info col">
+        <b>{{event.post_title}}</b><br>
+        <span>{{event.start|fuzzy_date}}</span>
+        
+      </div>
+    </div>
+    </div>
+
+    </a>
+    {% endfor %}
+
+
+
+  </div>

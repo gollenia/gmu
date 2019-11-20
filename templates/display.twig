@@ -1,0 +1,74 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="{{ site.theme.link }}/public/slides/css/reveal.css"></link>
+
+<link rel="stylesheet" href="{{ site.theme.link }}/public/slides/css/theme/white.css"></link>
+
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="slide nextservice" data-background-image="{{ site.theme.link }}/public/images/service.jpg">
+                <div>
+                <h3 class="title">NÄCHSTER GOTTESDIENST</h3><br>
+                <h1 class="">{{service[0].event_start_date|date('l, j. F')}} {{service[0].event_start_time|date('G:i')}}</h1><br>
+                <h3 class="extra">{{service[0].post_excerpt}}</h3>
+                </div>
+            </section>
+            
+            <section class="week" data-background-color="#e2dacd">
+                <div style="background: #214368">
+                    <h2 class="head" style="color: #86BBD8" >WOCHENPROGRAMM</h2>
+                </div>
+                <div class="content">
+                    <div>
+                    {% for event in week %}
+                    <div class="event">
+                        <div class="date"><h5 class="day-in-month">{{event.event_start_date|date('l, j. F Y')}} um {{event.event_start_time|date('G:i')}} Uhr</h5></div>
+                    <div class="caption"><h2 class="title">{{event.post_title}}</h2><h2 class="subtitle">{{event.post_excerpt}}</h2></div>
+                    
+                    </div>
+                    {% endfor %}
+                    </div>
+                </div>
+                
+            </section>
+
+            {% for event in featured.events %}
+                <section class="slide featured" data-background-image="{{featured.images[loop.index0].src}}">
+                <div><h3 class="extra">{{event.post_excerpt}}</h3></div>
+                <div><h1>{{event.post_title}}</h1></div>
+                <div><h3 class="date">{{event.event_start_date|date('l, j. F Y')}} um {{event.event_start_time|date('G:i')}}</h3></div>
+                </section>
+            {% endfor %}
+
+        </div>
+    </div>
+
+
+<script src="{{ site.theme.link }}/public/slides/js/reveal.js"></script>    
+<script>
+			Reveal.initialize(
+                {
+                    autoSlide: 5000,
+                    controls: false,
+                    transition: 'fade',
+                    loop: true,
+                    center: false,
+                    width: "100%",
+                    height: "100%",
+                    margin: 0,
+                    minScale: 1,
+                    maxScale: 1
+                }
+            );
+
+           
+           
+		</script>
+
+</body>
+
+</html>

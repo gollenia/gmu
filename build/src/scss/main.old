@@ -1,0 +1,200 @@
+
+@import "variables";
+@import "uikit";
+
+
+.main-head {
+  em {
+    background: #fff;
+  }
+  strong {
+    background: #fff;
+  }
+}
+
+
+.gmu-cover {
+  position: relative;
+  &:after {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.uk-navbar {
+  position: fixed;
+  background: none;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-title {
+  font-family: "Pacifico";
+  font-size: 2.5rem;
+  color: #fff;
+}
+.header-subtitle {
+  color: #000;
+  background: #fff;
+  font-size: 2.5rem;
+  }
+
+
+.next-service {
+  background-color: #cfc9c1;
+  border-bottom: 1px solid #bbb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .date {
+    font-size:1.5rem;
+    font-weight: bold;
+  }
+}
+
+.gmu-cover.has-background-dim-10::after {
+  opacity: .1
+}
+.gmu-cover.has-background-dim-20::after {
+  opacity: .2
+}
+.gmu-cover.has-background-dim-30::after {
+  opacity: .3
+}
+.gmu-cover.has-background-dim-40::after {
+  opacity: .4
+}
+.gmu-cover.has-background-dim-50::after {
+  opacity: .5
+}
+.gmu-cover.has-background-dim-60::after {
+  opacity: .6
+}
+.gmu-cover.has-background-dim-70::after {
+  opacity: .7
+}
+.gmu-cover.has-background-dim-80::after {
+  opacity: .8
+}
+.gmu-cover.has-background-dim-90::after {
+  opacity: .9
+}
+.gmu-cover.has-background-dim-100::after {
+  opacity: 1
+}
+
+.gmu-card-no-padding {
+  .uk-card-header, .uk-card-body, .uk-card-footer {
+    padding-left: 0px; padding-right: 0px;
+  }
+}
+
+
+.has-pale-pink-background-color, .gmu-cover.has-pale-pink-background-color::after, {
+  background-color: #f78da7; }
+
+.has-vivid-red-background-color .gmu-cover.gmu-cover.has-vivid-red-background-color::after{
+  background-color: #cf2e2e; }
+
+.has-luminous-vivid-orange-background-color, .gmu-cover.has-luminous-vivid-orange-background-color::after {
+  background-color: #ff6900; }
+
+.has-luminous-vivid-amber-background-color, .gmu-cover.has-luminous-vivid-amber-background-color::after {
+  background-color: #fcb900; }
+
+.has-light-green-cyan-background-color, .gmu-cover.has-light-green-cyan-background-color::after {
+  background-color: #7bdcb5; }
+
+.has-vivid-green-cyan-background-color, .gmu-cover.has-vivid-green-cyan-background-color::after {
+  background-color: #00d084; }
+
+.has-pale-cyan-blue-background-color, .gmu-cover.has-pale-cyan-blue-background-color::after {
+  background-color: #8ed1fc; }
+
+.has-vivid-cyan-blue-background-color, .gmu-cover.has-vivid-cyan-blue-background-color::after {
+  background-color: #0693e3; }
+
+.has-very-light-gray-background-color, .gmu-cover.has-very-light-gray-background-color::after {
+  background-color: #eee; }
+
+.has-cyan-bluish-gray-background-color, .gmu-cover.has-cyan-bluish-gray-background-color::after {
+  background-color: #abb8c3; }
+
+.has-very-dark-gray-background-color, .gmu-cover.has-very-dark-gray-background-color::after {
+  background-color: #313131; }
+
+.has-pale-pink-color.has-pale-pink-color {
+  color: #f78da7; }
+
+.has-vivid-red-color.has-vivid-red-color {
+  color: #cf2e2e; }
+
+.has-luminous-vivid-orange-color.has-luminous-vivid-orange-color {
+  color: #ff6900; }
+
+.has-luminous-vivid-amber-color.has-luminous-vivid-amber-color {
+  color: #fcb900; }
+
+.has-light-green-cyan-color.has-light-green-cyan-color {
+  color: #7bdcb5; }
+
+.has-vivid-green-cyan-color.has-vivid-green-cyan-color {
+  color: #00d084; }
+
+.has-pale-cyan-blue-color.has-pale-cyan-blue-color {
+  color: #8ed1fc; }
+
+.has-vivid-cyan-blue-color.has-vivid-cyan-blue-color {
+  color: #0693e3; }
+
+.has-very-light-gray-color.has-very-light-gray-color {
+  color: #eee; }
+
+.has-cyan-bluish-gray-color.has-cyan-bluish-gray-color {
+  color: #abb8c3; }
+
+.has-very-dark-gray-color.has-very-dark-gray-color {
+  color: #313131; }
+
+  .last-sermon {
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+background: #fff;
+
+  }
+
+
+  .upcoming-events {
+    .event {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      color: #3f3931;
+      .date {
+        width: 64px;
+        text-align: center;
+      }
+      .info {
+
+      }
+      .month {
+        font-weight: bold;
+        line-height: 1rem;
+        background: #a71b1b;
+        border-radius: 3px;
+        padding: 0px 5px;
+        color: #dfd9d1;
+      }
+      .day {
+        margin: 0;
+        font-weight: bold;
+        color: #a71b1b;
+        line-height: 28px;
+      }
+      &:hover {
+        color: #3f3931;
+        background-color: #cfc9c1;
+        text-decoration: none;
+      }
+    }
+  }

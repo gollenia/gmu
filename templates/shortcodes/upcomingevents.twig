@@ -1,0 +1,23 @@
+<div class="upcoming-events ">
+
+    {% for event in events %}
+   
+    <a href="{{event.guid}}" class="no-gutter event row">
+      <div class="date col-auto col">
+        <h2 class="day">{{event.start|date("j")}}</h2>
+        <span class="month">{{event.start|date('M')}}</span>
+      </div>
+      <div class="info col">
+        <b>{{event.post_title}}</b><br>
+        <span class="small upper gray">{{event.start|date("l, j. M. Y \\u\\m G:i")}}</span>
+        
+      </div>
+
+    </a>
+   
+
+    {% endfor %}
+
+
+      
+  </div>

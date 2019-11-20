@@ -1,0 +1,9 @@
+<div uk-parallax="bgy: -200" class="gmu-cover uk-height-large uk-background-cover uk-light
+  {% if attributes.dimRatio > 0 %}has-background-dim-{{attributes.dimRatio}}{% endif %}
+  {% if attributes.overlayColor %}has-{{attributes.overlayColor}}-background-color{% endif %}
+"
+  style="background-image: url('{{attributes.url}}');
+  {% if attributes.customOverlayColor %}background-color: {{attributes.customOverlayColor}}{% endif %}
+
+">
+</div>

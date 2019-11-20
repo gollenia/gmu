@@ -1,0 +1,27 @@
+<div class="sermons-small ">
+{% for sermon in sermons %}
+  
+    <div class="sermon">
+      <div class="player">
+      <div class="media-player">
+							<audio preload="none" data-size="50" src="{{sermon.audio}}"></audio>
+			</div>
+      </div>
+      <div class="">
+        <b>{{sermon.title}}</b><br>
+        <span class="info small">Am {{sermon.date|date("d.m.Y")}} von {{sermon.preacher}}</span>
+        
+      </div>
+
+
+    </div>
+{% endfor %}
+</div>
+
+
+<script>
+window.addEventListener('load', (event) => {
+  jQuery('.media-player').mediaPlayer();
+});
+
+</script>

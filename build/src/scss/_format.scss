@@ -1,0 +1,352 @@
+@font-face {
+  font-family: GaB;
+  src: url("/wp-content/themes/gmu/public/fonts/gab.ttf");
+}
+
+@include media-breakpoint-up(md) {
+  .top-shift {
+    margin-top: -50px;
+  }
+}
+
+
+
+.shadow-10 {
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+}
+
+.shadow-5 {
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
+
+
+h2.content-heading {
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: bold;
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    bottom: 0;
+    background: theme-color("primary");
+    left: 0;
+  }  
+}
+
+
+
+
+.accordion {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .card {
+    margin-bottom: 10px;
+  }
+  .card-header {
+    padding: 0 0;
+    button {
+      padding: 10px 25px;
+      width: 100%;
+      text-decoration: none !important;
+      text-align: left;
+    }
+    button[aria-expanded="true"] {
+      color: #fff;
+      background: theme-color("primary");
+    }
+    
+  }
+
+  .card.text-center {
+    margin: auto;
+  }
+  
+
+
+  .number {
+    font-size: 1.6rem;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  .accordion-title {
+    display: flex;
+    align-items: center;
+    &:hover, &:focus {
+      color: $dark-gray;
+    }
+  }
+  .accordion-item.is-active {
+    .number {
+      color: theme-color("primary");
+    } 
+  }
+
+
+
+}
+
+ul.styled-list {
+  list-style-type: none;
+  padding-left: 38px;
+  li {
+    margin-bottom: 15px;
+  }
+  li::before {
+    content: "\e892";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: theme-color("primary"); /* Change the color */
+    font-family: "Material Icons";
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -24px;
+    position: absolute;
+  }
+}
+
+
+blockquote {
+  
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button.warning {
+  color: theme-color("secondary");
+}
+
+.script {
+  font-family: "GaB";
+}
+.has-green-background-color {
+  background-color: theme-color("secondary");
+}
+.has-blue-background-color {
+  background-color: theme-color("primary");
+}
+
+.has-lightblue-background-color {
+  background-color: theme-color("warning");
+}
+
+.has-orange-background-color {
+  background-color: theme-color("warning");
+}
+
+
+.has-red-background-color {
+  background-color: theme-color("alert")
+}
+
+.has-light-gray-background-color {
+  background-color: $light-gray;
+}
+
+.has-dark-gray-background-color {
+  background-color: $dark-gray;
+}
+
+.has-white-background-color {
+  background-color: $white;
+}
+
+
+.has-orange-color {
+  color: theme-color("secondary");
+}
+
+.has-blue-color {
+  color: theme-color("primary");
+}
+
+.has-lightblue-color {
+  color: theme-color("warning");
+}
+
+.has-white-color {
+  color: $white;
+}
+
+.has-dark-gray-color {
+  color: $dark-gray;
+}
+
+.has-light-gray-color {
+  color: $light-gray;
+}
+
+span.copy-text {
+  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  &::after {
+    @extend .material-icons;
+    content: "filter_none";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    color: theme-color("success");
+    top: 4px;
+    right: -20px;
+    position: absolute;
+  }
+}
+
+
+.more-link {
+  padding-right: 35px;
+  
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  &::after {
+    @extend .material-icons;
+    content: "arrow_forward_ios";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.section-caption {
+  .col { border-bottom: 1px solid theme-color("primary");
+    padding-bottom: 5px; }
+  margin-bottom: 20px; 
+  .h4 {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  a {
+    float: right;
+  }
+}
+
+.card-image.shadow {
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.material-icons {
+  direction: ltr;
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1 {
+  //@include media-breakpoint-up(sm) {
+    font-weight: bold;
+  //}
+  
+}
+
+h4.line {
+  border-bottom: 1px solid #0063dd;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.gray {
+  color: $gray-600;
+}
+
+.cover {
+  height: 15vw;
+  object-fit: cover;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.rating {
+  i {
+    color: $gray-600;
+  }
+}
+.rating-1 {
+  .star-1 {
+    color: $yellow;
+  }
+}
+
+.rating-2 {
+  .star-1, .star-2 {
+    color: $yellow;
+  }
+}
+
+.rating-3 {
+  .star-1, .star-2, .star-3 {
+    color: $yellow;
+  }
+}
+
+.rating-4 {
+  .star-1, .star-2, .star-3, .star-4 {
+    color: $yellow;
+  }
+}
+
+.rating-5 {
+  i {
+    color: $yellow;
+  }
+}
+
+div.em-booking-message {
+  border-radius: 0px !important;
+  border: 0px !important;
+}
+
+
+@for $i from 1 through 10 {
+  @include media-breakpoint-up(md) {
+    .shift-#{$i*10} {
+      margin-top: #{(10*$i)}px;
+    }
+    .shift--#{$i*10} {
+      margin-top: -#{(10*$i)}px;
+    }
+  }
+}
+
+input.form-control {
+  background-color: #ccc;
+  &:hover, &:focus {
+    color: #fff;
+    background-color: $gray-600;
+  }
+}
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: theme-color("primary");
+  border: 0px solid #bbb;
+}

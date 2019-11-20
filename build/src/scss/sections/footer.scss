@@ -1,0 +1,94 @@
+footer {
+    margin-top: 70px;
+    background: $dark-gray;
+    color: $light-gray;
+    padding: 40px 0px 30px 0px;
+    p, label {
+      color: $gray-500;
+    }
+  
+    a {
+      color: theme-color("success");
+    }
+    
+    h4 {
+      font-weight: bold;
+      color: #aaa;
+      border-bottom: 1px solid #8a8a8a !important;
+      margin-bottom: 30px;
+    }
+      
+    
+    [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+      background: $medium-gray;
+      border-radius: 0px;
+      box-shadow: none !important;
+      color: $dark-gray;
+      &::placeholder {
+        color: $light-gray;
+      }
+      &:focus {
+        background: $white;
+        color: theme-color("primary");
+        border: none;
+        
+      }
+      &:focus::placeholder {
+        color: #214368;
+      }
+     
+      
+    }
+    .wpcf7-submit {
+      @extend .button;
+      
+    }
+    div.wpcf7-mail-sent-ng {
+      border: 0px;
+      background: theme-color("primary");
+      color: $white;
+      border-radius: 0px;
+      margin-left: -10px;
+    }
+  
+    div.wpcf7-aborted {
+      border: 0px;
+      background: #FF9800;
+      color: #333;
+      border-radius: 0px;
+      margin-left: -10px;
+  }
+
+  textarea {
+    background: $gray-600;
+    color: $gray-200 !important;
+    border: none !important;
+    padding: 15px;
+    &:focus {
+      background: $gray-200 !important;
+      color: $gray-800 !important;
+    }
+  }
+
+  .gray-input {
+    background: $gray-600;
+    border: none !important;
+    color: $gray-200 !important;
+    padding: 15px;
+    &:focus {
+      background: $gray-200 !important;
+      color: $gray-800 !important;
+    }
+  }
+    
+  }
+  
+  
+  .spacer-10 {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+  }
+  
+  
+  

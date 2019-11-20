@@ -1,0 +1,41 @@
+
+
+  <!-- Desktop-Menü -->
+
+  <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light" >
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="{{ site.theme.link }}/public/images/logo.svg" style="height: 40px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="container">
+          <ul class="navbar-nav mr-auto">
+            {% for item in menu %}
+              <li class="nav-item {% if item.children %}dropdown{% endif %} {{ item.classes | join(' ') }}">
+                {% if item.children %}<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="nav-item-{{loop.index}}" aria-haspopup="true" aria-expanded="false" href="#">{{ item.title }}</a>
+                {% else %}<a class="nav-link target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>{% endif %}
+                {% if item.children %}
+                  <div class="dropdown-menu" aria-labelledby="nav-item-{{loop.index}}">
+                    {% for subitem in item.children %}
+                      <a class="dropdown-item" target="{{ subitem.target }}" href="{{ subitem.link }}">{{ subitem.title }}</a>
+                    {% endfor %}
+                  </div>
+
+                {% endif %}
+              </li>
+            {% endfor %}
+            
+          </ul>
+          </div>
+         <a class="btn btn-primary"  href="{{ TimberPost(322).link }}" role="button">Kontakt</a>
+          
+        </div>
+  </div>
+
+  </nav>
+
+
+
+

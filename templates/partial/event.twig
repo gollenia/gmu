@@ -1,0 +1,9 @@
+<div class="date col-auto col">
+    <h2 class="day">{{event.start|date("j")}}</h2>
+    <span class="month">{{event.start|date('M')}}</span>
+</div>
+    <div class="info col">
+        <b>{{event.post_title}}</b><br>
+        <span>{{event.start|fuzzy_date}}</span>
+    <br><span>{{event.post_excerpt}}</span>
+</div>

@@ -1,0 +1,23 @@
+
+<div class="latest-news">
+  
+  <div class="row">
+
+    {% for article in news %}
+    <a href="{{article.guid}}" class="news-item col col-12 col-lg-{{12 / cols}} ">
+    
+      <div class="row">
+        <div class="col col-4">
+          <div style="background-image: url('{{images[loop.index0].src}}')" class="image"></div>
+        </div>
+        <div class="col col-8">
+          <span class="title" href="#">{{article.post_title}}</span><br/>
+          <span class="date small">{{article.post_date|date('j. F Y')}}</span>
+        </div>
+    </div>
+  
+    </a>
+    {% endfor %}
+  </div>
+  
+</div>

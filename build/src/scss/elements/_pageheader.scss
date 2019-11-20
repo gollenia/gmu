@@ -1,0 +1,39 @@
+
+.header-title {
+  background: $green;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 10px 0px;
+}
+.header-subtitle {
+  background: $green;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 10px 0px;
+}
+
+.main-header-image {
+  @include media-breakpoint-up(xs) {
+    height: 480px
+  }
+  @include media-breakpoint-up(sm) {
+    height: 480px
+  }
+  @include media-breakpoint-up(md) {
+    height: 480px
+  }
+  @include media-breakpoint-up(lg) {
+    height: 480px
+  }
+
+  background-size: cover;
+  background-position: center;
+}
+
+.caption {
+  text-align: center;
+}

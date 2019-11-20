@@ -1,0 +1,67 @@
+.sermons-small {
+  .sermon {
+    display: flex;
+    margin-bottom: 15px;
+    .player {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .info {
+      color: $gray-600;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+
+
+  .media-player, .media--player {
+    display: inline-block;
+    .control {
+        opacity        : 0; /* transition: opacity .2s linear; */
+        pointer-events : none;
+        cursor         : pointer;
+    }
+    
+    .not-started .play, .paused .play {
+        opacity : 1;
+    
+    }
+    
+    .playing .pause {
+        opacity : 1;
+    
+    }
+    
+    .playing .play {
+        opacity : 0;
+    }
+    
+    .ended .stop {
+        opacity        : 1;
+        pointer-events : none;
+    }
+    
+    .precache-bar .done {
+        opacity : 0;
+    }
+    
+    .not-started .progress-bar, .ended .progress-bar {
+        display : none;
+    }
+    
+    .ended .progress-track {
+        stroke-opacity : 1;
+    }
+    
+    .progress-bar,
+    .precache-bar {
+        transition        : stroke-dashoffset 500ms;
+    
+        stroke-dasharray  : 298.1371428256714;
+        stroke-dashoffset : 298.1371428256714;
+    }
+  }
+  
+  

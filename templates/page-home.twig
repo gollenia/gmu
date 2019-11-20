@@ -1,0 +1,20 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="main-header-image" style="background-image: url('{{ image.src }}');">
+	
+		<div class="no-gutters row align-items-center justify-content-center" style="height: 100%">
+			<div class="col col-sm-auto">
+				<span class="h1 header-title">Mit Jesus aufbrechen</span><br>
+				<span class="h1 header-subtitle">Menschen annehmen</span><br>
+				<button class="btn btn-primary" href="#">Unser Glaube</button>
+			</div>
+		</div>
+	</div>
+	
+	<article>
+		{{post.content}}
+	</article>
+
+
+{% endblock %}

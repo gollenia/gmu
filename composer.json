@@ -1,0 +1,6 @@
+{
+    "require": {
+        "timber/timber": "^1.9",
+        "symfony/yaml": "^4.3"
+    }
+}

@@ -1,0 +1,29 @@
+<div class="camps ">
+
+
+    <div class="row">
+
+
+    {% for camp in camps %}
+    <div class="col col-md-6">
+    
+      <div class="image" style="height: 200px; background-image: url('{{camp.image.src}}'")>
+          <span>{{camp.location}}</span>
+      </div>
+
+
+      <div class="details">
+
+      
+        <a href="{{camp.guid}}" ><h3>{{camp.title}}</h3></a>
+        <span>{{camp.start|date(j. F)}} bis {{camp.end|date(j. F)}}</span>
+        <br><span>{{camp.post_excerpt}}</span>
+      
+      </div>
+
+    </div>
+    {% endfor %}
+
+</div>
+
+  </div>

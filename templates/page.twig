@@ -1,0 +1,32 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	
+		{% if image.src %}
+		<header class="header-image page-header" style="height:300px; background-image: url('{{ image.src }}');">
+			<div class="container" style="height: 100%">
+				<div class="row align-items-center" style="height: 100%">
+					<div class="col">
+					<h1 class="">{{post.title}}</h1>
+					</div>
+            	</div>
+        	</div>
+		</header>
+		{% else %}
+		<header class="header-no-image page-header" style="height:200px;">
+			<div class="container" style="height: 100%">
+				<div class="row align-items-center" style="height: 100%">
+					<div class="col">
+					<h1 class="">{{post.title}}</h1>
+					</div>
+            	</div>
+        	</div>
+		</header>
+		{% endif %}
+		<article>
+			{{post.content}}	
+		</article>
+
+	
+	
+{% endblock %}

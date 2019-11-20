@@ -1,0 +1,31 @@
+
+<div class="latest-news">
+  
+  <div class="card-columns">
+
+    {% for article in news %}
+    {# <div class="news-item col col-12 col-lg-{{12 / cols}}"> #}
+    
+        <div class="card">
+          {% if article.image.abs_url %}<img class="card-img-top cover" src="{{article.image.abs_url}}" alt="">{% endif %}
+          {# <div class="col col-12">
+            <a href="{{article.url}}" style="display: block; height: 200px; background-image: url('{{article.image.abs_url}}'); background-position: center; background-size: cover" class=""></a>
+          </div> #}
+          <div class="card-body">
+            <a class="h4" href="{{article.url}}"><h4 class="card-title no-line">{{article.title}}</h4></a>
+            <p class="card-text">{{article.excerpt}}</p>
+            <span class="small upper gray">{{article.author.name}} | {{article.date|date("l, j. M. Y")}}</span>
+            <p class="card-text"></p>
+            
+          </div>
+          {# <div class="col col-12">
+            <a class="h4" href="{{article.guid}}">{{article.title}}</a><br>
+            <span class="small upper gray">{{article.author.name}} | {{article.date|date("l, j. M. Y")}}</span>
+            <p>{{article.excerpt}}</p>
+          </div> #}
+        </div>
+
+    {% endfor %}
+  </div>
+  
+</div>

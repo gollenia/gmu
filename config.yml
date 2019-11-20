@@ -1,0 +1,83 @@
+locale: "de_DE"
+widget_areas:
+  -
+    name: 'Footer-Bereich'
+    id: 'footer_area'
+    description: 'Widget-Bereich ganz unten auf der Seite'
+    before_widget: '<div class="col col-12 col-lg-4">'
+    after_widget: '</div>'
+    before_title: '<h4>'
+    after_title: '</h4>'
+colors: 
+  - 
+    color: "#95c04c"
+    name: Grün
+    slug: green
+  - 
+    color: "#0063dd"
+    name: Blau
+    slug: blue
+  - 
+    color: "#fd7e14"
+    name: Orange
+    slug: orange
+  - 
+    color: "#dc3545"
+    name: Rot
+    slug: red
+  - 
+    color: "#D7CEB2"
+    name: Erde
+    slug: soil
+  - 
+    color: "#86BBD8"
+    name: Hellblau
+    slug: lightblue
+  - 
+    color: "#33373f"
+    name: Schwarz
+    slug: black
+  - 
+    color: "#51575f"
+    name: Dunkelgrau
+    slug: dark-gray
+  - 
+    color: "#81878f"
+    name: Mittelgrau
+    slug: medium-gray
+  - 
+    color: "#b1b7bf"
+    name: Hellgrau
+    slug: light-gray
+  - 
+    color: "#ffffff"
+    name: Weiß
+    slug: white
+styles:
+  -
+    id: "main"
+theme_support:
+  - name: "menus"
+    options: false
+  - name: "post-thumbnails"
+    options: false
+  - name: "title-tag"
+    options: false
+  - name: "automatic-feed-links"
+    options: false
+  - name: "html5"
+    options: ['comment-form', 'comment-list', 'gallery', 'caption']
+  - name: "post-formats"
+    options: ['aside', 'image', 'video', 'quote', 'link', 'gallery', 'audio']
+page_options:
+  - name: "Bild-Ausrichtung"
+    tag: "select"
+    type: "false"
+    items: 
+      - value: 'top'
+        title: 'Oben'
+    id: 'image-position'
+  - name: "Pfad"
+    tag: "input"
+    type: "text"
+    id: 'path'

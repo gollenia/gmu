@@ -1,0 +1,28 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="header-image page-header" style="background-size: cover; background-position: center; background-image: url('{{ image.src }}');">
+        
+			<div class="container" style="height: 100%">
+				<div class="row align-items-center" style="height: 100%">
+					<div class="col">
+					<h1 class="">{{event.post_title}}</h1>
+					</div>
+            	</div>
+        	</div>
+	</div>
+
+	<article>
+		<div class="row">
+			
+			<div class="col col-12 col-md-6 col-lg-8">
+			
+				{{event.content}}
+			</div>	
+			<div class="col col-12 col-md-6 col-lg-4">
+				<h3>Weitere Termine</h3>
+				{{ function('do_shortcode', '[upcomingevents title="Kommende Termine"]') }}
+			</div>
+		</div>
+	</article>
+{% endblock %}

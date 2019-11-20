@@ -1,0 +1,59 @@
+
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="material-icons">search</i></span>
+  </div>
+  <input type="search" class="form-control table-filter" data-table="sermon-list" placeholder="Suche..." aria-label="Search" aria-describedby="basic-addon1">
+</div>
+
+<div style="height: 50px;"></div>
+<table style="table-layout: fixed" class="table sermon-list table-hover">
+    <!-- <thead>
+        <tr>
+            <th></th>
+            <th>Thema</th>
+            <th>Prediger</th>
+            <th>Datum</th>
+            <th>Reihe</th>
+            <th>Dauer</th>
+        </tr>
+    </thead> -->
+{% for sermon in sermons %}
+    <tr class="sermon series-id-{{sermon.serie.id}}">
+      <td style="width: 60px !important; padding-left: 0px !important" valign="middle" class="player align-middle">
+        <div class="media-player">
+                <audio preload="none" data-size="50" src="{{sermon.audio}}"></audio>
+        </div>
+      
+      </td>
+      <td valign="middle" class="thema align-middle">
+        <b>{{sermon.title}}</b><br>
+        <small class="d-md-none">{{sermon.preacher}} am {{sermon.date|date("d.m.Y")}}</small>
+      </td>
+      <td class="d-none d-md-table-cell d-lg-table-cell d-xl-table-cell align-middle" valign="middle">{{sermon.preacher}}</td>
+      <td class="d-none d-md-table-cell d-lg-table-cell d-xl-table-cell align-middle" valign="middle">{{sermon.date|date("d.m.Y")}}</td>
+      <td class="d-none d-md-table-cell d-lg-table-cell d-xl-table-cell align-middle" valign="middle">{{sermon.serie.name}}</td>
+      <td class="d-none d-md-table-cell d-lg-table-cell d-xl-table-cell align-middle" valign="middle">{{sermon.duration[3:]}}</td>
+      <td class="d-none d-md-table-cell d-lg-table-cell d-xl-table-cell align-middle" valign="middle"><i class="material-icons">cloud_download</i></td>
+    </tr>
+{% endfor %}
+</table>
+
+
+<script>
+window.addEventListener('load', (event) => {
+  jQuery('.media-player').mediaPlayer();
+});
+
+
+jQuery("#searchInput").keyup(function () {
+    var rows = jQuery(".sermon-list").find("tr").hide();
+    if (this.value.length) {
+        var data = this.value.split(" ");
+        jQuery.each(data, function (i, value) {
+            rows.filter(":contains('" + value + "')").show();
+        });
+    } else rows.show();
+});
+</script>
