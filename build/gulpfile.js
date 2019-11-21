@@ -22,7 +22,7 @@ gulp.task('production', function () {
           errLogToConsole: true,
           includePaths: [__dirname]
         }))
-      .pipe(cleanCSS({debug: true}, (details) => {
+      .pipe(uglify({debug: true}, (details) => {
           console.log(`${details.name}: ${details.stats.originalSize}`);
           console.log(`${details.name}: ${details.stats.minifiedSize}`);
       }))
