@@ -47,8 +47,7 @@
         transform: scale(0.6);
         opacity: 0;
         transition: all 300ms ease-in-out;
-        border-top-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+
 		a {
 			color: var(--primary);
 		}
@@ -156,7 +155,7 @@
         }
         .modal__header {
             position: relative;
-            background: var(--primary-light);
+            background: var(--secondary);
             margin-top: 5rem;
             min-height: 75px;
             height: auto;
@@ -184,8 +183,7 @@
         }
         .modal__title h2 { 
             margin: 0;
-            background: var(--primary);
-            color: var(--primary-contrast);
+            color: var(--secondary-contrast);
             border-top-right-radius: 2rem;
             display: inline-block;
             font-weight: bold;

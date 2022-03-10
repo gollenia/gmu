@@ -70,7 +70,8 @@
             top: space(4);
         }
         .card__label {
-            margin-top: space(-7);
+			top: 0;
+			transform: translate(0, -150%);
             margin-left: space(-2);
         }
     }
@@ -136,21 +137,26 @@
         }
     }
 
-    &--first {
-        border-top-left-radius: radius('lg', 'tl');
-        border-bottom-left-radius: radius('lg', 'bl');
-        &.card--image-top .card__image, &.card--image-left .card__image {
-            border-top-left-radius: radius('lg', 'tl');
-        }
-    }
+	&__image-overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+		padding: 3rem 1.5rem 1rem;
 
-    &--last {
-        border-top-right-radius: radius('lg', 'tr');
-        border-bottom-right-radius: radius('lg', 'br');
-        &.card--image-bottom .card__image, &.card--image-right .card__image {
-            border-bottom-right-radius: radius('lg', 'br');
-        }
-    }
+		width: 100%;
+		.card__title {
+			color: var(--white);
+		}
+
+		.card__subtitle {
+			display: block;
+			color: var(--white);
+		}
+	}
+
+
+    
 
     &--primary {
         .card__badge, .card__label {
@@ -232,8 +238,8 @@
 
     &__badge {
         aspect-ratio: 1/1;
-        border-radius: 9999px;
         display: flex;
+		z-index: 1;
         flex-direction: column;
         position: absolute;
         align-items: center;
@@ -264,8 +270,6 @@
 
     &__label {
         position: absolute;
-        border-top-left-radius: space(2);
-        border-bottom-right-radius: space(2);
         padding-left: space(2);
         padding-right: space(2);
     }

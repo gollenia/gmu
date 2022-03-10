@@ -32,9 +32,23 @@
 		flex-direction: row-reverse;
 	}
 
+	&::after {
+		content: " ";
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 2px;
+		background: var(--primary-dark);
+		transform: scaleX(0);
+		transition: transform 300ms ease-in-out;
+	}
+
     &:hover, &:focus {
-        animation: button-zoom-in 150ms ease-in-out;
-		transform: scale(1.1);
+        &::after {
+			transform: scaleX(1);
+		}
     }
 
     @each $key, $color in $themecolors {

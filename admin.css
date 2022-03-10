@@ -1,21 +1,14 @@
-@import url(https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap);
-/*@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,400&display=swap');*/
+@import url(https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap);
 .editor-post-title__block .editor-post-title__input {
-  font-family: "Exo 2";
+  font-family: "Inria Sans";
 }
 
 .editor-styles-wrapper {
-  font-family: "Exo 2" !important;
+  font-family: "Inria Sans" !important;
 }
 
 .ctx-font-script {
   font-family: "Gochi Hand";
-}
-
-.ctx-button {
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .editor-styles-wrapper {

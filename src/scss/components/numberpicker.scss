@@ -1,15 +1,16 @@
 
 .number-picker {
-   padding: 0.25rem;
-   border-radius: 999px;
+   padding: 0rem;
+   border-radius: 0;
    display: inline-flex;
    align-items: center;
    background: gray(300);
+   height: fit-content;
 
    button {
       @extend .button--pop;
-      border-radius: 999px;
-      background: gray(500);
+      border-radius: 0;
+      background: var(--primary);
       color: var(--primary-contrast);
       cursor: pointer;
       background-position: center;
