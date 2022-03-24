@@ -27,5 +27,5 @@ mix.sass('src/scss/style.scss', '.').then(function () {
 mix.sass('src/scss/admin.scss', '.')
 
 mix.browserSync({
-    proxy: 'kids-team.local',
+	proxy: 'https://gmu.internal',
 });

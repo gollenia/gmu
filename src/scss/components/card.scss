@@ -205,6 +205,7 @@
         display: inline-block; 
         margin: 0;
 		border-bottom: none !important;
+		line-height: 3rem;
     }
 
 	&card__title--small {
@@ -220,6 +221,7 @@
         display: inline-block; 
         margin: 0;
 		border-bottom: none !important;
+		line-height: 2.25rem;
     }
 
     &__text, p {

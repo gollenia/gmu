@@ -208,16 +208,15 @@
 	margin-right: 2rem;
 
     .dropdown {
-      padding-left: 0;
-      background-color: #dddddd;
-      
+      padding-left: 0;      
       position: absolute;
       transform: scaleY(.7);
       opacity: 0;
       pointer-events: none;
       transform-origin: top;
       transition: all 100ms ease-in-out;
-      top: 8px;
+      top: 0px;
+	  padding:1rem;
       margin-top: space(9);
       width: max-content;
       right: 0;
@@ -226,7 +225,7 @@
       .dropdown__item {
         color: grayscale(900);
         padding: 0;
-
+		background-color: #dddddd;
         a {
 		position: relative;
           padding: space(1) space(4);
