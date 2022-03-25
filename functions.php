@@ -20,3 +20,18 @@ function ilc_favicon(){
 
 
 
+function add_event_template() {
+	$page_type_object = get_post_type_object( 'event' );
+	$page_type_object->template = [
+		[ 'ctx-blocks/section', [], [
+			[ 'ctx-blocks/grid-row', [], [
+				[ 'ctx-blocks/grid-column', ['widthLarge' => 2], [['core/paragraph', ['placeholder' => 'Event-Beschreibung']], ] ], 
+				[ 'ctx-blocks/grid-column', ['widthLarge' => 1], [
+					['events-manager/details'], ] ] 
+			] ],
+			[ 'core/separator' ],
+			[ 'ctx-blocks/button-group', [], [ ['ctx-blocks/button', ['title' => 'Anmeldung']] ] ]
+		] ],
+	];
+}
+add_action( 'init', 'add_event_template', 1000 );
