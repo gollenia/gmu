@@ -1,6 +1,22 @@
 .flex {
     display: flex;
+	&--1 {
+		flex: 1;
+	}
+	&--center {
+		display: flex;
+		align-items: center;
+	}
+	&--row {
+		flex-direction: row;
+	}
+	&--column {
+		flex-direction: column;
+	}
+
 }
+
+
 
 .mx-auto {
     margin-left: auto;
@@ -48,6 +64,47 @@
     .xl\:hidden {
         display: none;
     }
+	.xl\:flex {
+		display: flex;
+		&--1 {
+			flex: 1;
+		}
+		&--center {
+			display: flex;
+			align-items: center;
+		}
+		&--row {
+			flex-direction: row;
+		}
+		&--column {
+			flex-direction: column;
+		}
+	
+	}
+}
+
+
+
+$utilities: () !default;
+
+.margin--0 {
+	margin: 0;
+}
+
+.margin--1 {
+	margin: 1rem;
+}
+
+.padding--0 {
+	padding: 0;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.mt-auto {
+	margin-top: auto;
 }
 
 
