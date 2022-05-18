@@ -83,6 +83,6 @@ ul.core-block li:before {
     opacity: 0;
 }
 
-h2, h3, h4 {
+h2.core-block, h3.core-block, h4.core-block {
 	border-bottom: 2px solid var(--gray-500);
 }
