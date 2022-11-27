@@ -1,10 +1,10 @@
 @each $key, $value in $headings {
-    .#{$key}, #{$key} {
+    .#{$key},
+    #{$key} {
         font-size: $text-base * $value;
         line-height: $line-height-factor * $text-base * $value;
     }
 }
-
 
 .text-xs {
     font-size: $spacer * 0.75 !important;
@@ -17,50 +17,47 @@ p.core-block:empty {
 
 ol.core-block {
     list-style-type: decimal;
-    padding: map-get($spacers,2) 0 map-get($spacers,2), map-get($spacers,8);
+    padding: map-get($spacers, 2) 0 map-get($spacers, 2), map-get($spacers, 8);
 }
-
-
 
 hr {
     border: 0;
     width: 100% !important;
     border-bottom-style: dotted !important;
-    border-bottom-width: 4px !important;;
-    border-color: rgba(0,0,0,0.3);
+    border-bottom-width: 4px !important;
+    border-color: rgba(0, 0, 0, 0.3);
     margin: 1rem 0 !important;
 }
 
 .dark hr {
-    border-color: rgba(255,255,255,0.3);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 ul.core-block {
-    padding-left: 0px !important
+    padding-left: 0px !important;
 }
 
 ul.core-block li {
     list-style-type: none;
     margin-left: 2rem;
     align-content: center;
-    padding: 0.25rem 0.5rem
+    padding: 0.25rem 0.5rem;
 }
 
 ul.core-block li:before {
     content: "square";
     display: inline-block;
-    font-family: 'material-icons';
+    font-family: "material-icons";
     margin-left: -2rem;
     position: absolute;
     font-size: 24px;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
     line-height: 1;
 }
 
 .dark ul.core-block li:before {
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
-
 
 .text-right {
     text-align: right;
@@ -83,6 +80,14 @@ ul.core-block li:before {
     opacity: 0;
 }
 
-h2.core-block, h3.core-block, h4.core-block {
-	border-bottom: 2px solid var(--gray-500);
+h2.core-block,
+h3.core-block,
+h4.core-block {
+    border-bottom: 2px solid var(--gray-500);
+}
+
+h2.no-line,
+h3.no-line,
+h4.no-line {
+    border-bottom: none !important;
 }
