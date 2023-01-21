@@ -49,7 +49,6 @@
     "styles": {
         "spacing": {
             "margin": {
-                "top": "5rem",
                 "right": "auto",
                 "bottom": "60px",
                 "left": "auto"
