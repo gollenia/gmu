@@ -1,9 +1,11 @@
+@use "../tools/" as tools;
+
 .alert {
-    margin: 2rem 0rem;
+    margin: 2rem 1.5rem;
     padding: 2rem;
     display: relative;
     transition: all 300ms ease-in-out;
-    
+
     &__title {
         margin: 0;
     }
@@ -12,15 +14,22 @@
         margin: 1rem 0 0 0;
     }
 
-    &__close:before, .close:after {
+    &__close:before,
+    .close:after {
         position: absolute;
         top: 0;
         width: 1rem;
     }
 
-    &__close { position: relative; }
-    &__close:before { transform: rotate(-45deg); }
-    &__close:after { transform: rotate(45deg); }
+    &__close {
+        position: relative;
+    }
+    &__close:before {
+        transform: rotate(-45deg);
+    }
+    &__close:after {
+        transform: rotate(45deg);
+    }
 
     &--hidden {
         transform: scaleY(0);
@@ -31,4 +40,23 @@
         max-height: 0 !important;
     }
 
+    &--warning {
+        background-color: var(--warning-light);
+        color: var(--warning-light-contrast);
+    }
+
+    &--info {
+        background-color: var(--info);
+        color: var(--info-contrast);
+    }
+
+    &--error {
+        background-color: var(--error);
+        color: var(--error-contrast);
+    }
+
+    &--success {
+        background-color: var(--success-light);
+        color: var(--success-light-contrast);
+    }
 }
