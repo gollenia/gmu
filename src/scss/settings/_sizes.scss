@@ -40,10 +40,10 @@ $border-base: (
 /   Border Radius multiplier for each corner
 */
 $border-multiplier: (
-    "tl": 1,
+    "tl": 0,
     "tr": 0,
     "bl": 0,
-    "br": 1,
+    "br": 0,
 );
 
 $text-base: 1rem !default;
