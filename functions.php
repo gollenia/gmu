@@ -6,7 +6,7 @@ add_action( 'wp_enqueue_scripts', function() use($script) {
 		$script['version']
 	);
 	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' 	);
-	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap' 	);
+	wp_enqueue_style( 'inria', 'https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap' 	);
 } );
 
 add_action( 'admin_enqueue_scripts', function() use($script) {
