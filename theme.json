@@ -36,14 +36,7 @@
         },
         "typography": {
             "fluid": true,
-            "letterSpacing": true,
-            "fontFamilies": [
-                {
-                    "fontFamily": "Gochi Hand",
-                    "slug": "gochi",
-                    "name": "Gochi Hand"
-                }
-            ]
+            "letterSpacing": true
         }
     },
     "styles": {
@@ -52,10 +45,6 @@
                 "right": "auto",
                 "bottom": "60px",
                 "left": "auto"
-            },
-            "padding": {
-                "left": "1rem",
-                "right": "1rem"
             }
         },
         "elements": {
