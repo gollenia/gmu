@@ -10,24 +10,20 @@ ul.core-block li {
 }
 
 ul.core-block li:before {
-    content: "label";
+    content: " ";
     display: inline-block;
-    font-family: "material-icons";
     margin-left: -2rem;
     margin-right: 0.5rem;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.4);
     line-height: 1;
-    -webkit-font-feature-settings: "liga";
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
     line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    white-space: nowrap;
-    font-style: normal;
-    word-wrap: normal;
-    direction: ltr;
+    background-size: 24px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary);
+    position: absolute;
+    margin-top: 4px;
 }
 
 .dark ul.core-block li:before {

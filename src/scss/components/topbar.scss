@@ -1,4 +1,5 @@
 @use "../tools" as tools;
+@use "../settings/sizes" as sizes;
 /*
 *   Mobile
 */
@@ -16,9 +17,8 @@
     display: flex;
 
     &__inner {
-        margin-top: auto;
         width: 100%;
-        align-items: flex-end;
+        align-items: center;
         padding-left: 1rem;
         padding-right: 1rem;
         flex-direction: row;
@@ -45,19 +45,19 @@
         height: 100%;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         margin-left: 1rem;
     }
 
     // Logo
     &__logo {
-        margin-bottom: tools.space(-5) !important;
-        margin-left: tools.space(0) !important;
-        margin-right: tools.space(4) !important;
         z-index: 100;
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 3rem;
+        height: 3rem;
         transition: transform 200ms ease-in-out;
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-right: 1rem !important;
     }
 
     &__claim {
@@ -190,11 +190,18 @@
     .top-bar {
         &__logo {
             margin-left: 2rem;
-            width: auto;
+            width: 3rem;
         }
 
         &__claim {
             color: var(--black);
+        }
+
+        &__inner {
+            max-width: sizes.$body-width;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 1rem;
         }
 
         .hamburger {

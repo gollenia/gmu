@@ -1,19 +1,20 @@
+@use "../tools" as tools;
+
 .description {
     &__image,
     img {
-        height: space(12);
-
+        height: tools.space(12);
         flex-shrink: 0;
-        width: space(12);
-
-        height: space(12);
-
+        width: tools.space(12);
+        height: tools.space(12);
+        aspect-ratio: 1/1;
         display: grid;
         place-items: center;
+        background-color: #00000011;
 
         img {
-            width: space(12);
-            height: space(12);
+            width: tools.space(12);
+            height: tools.space(12);
             object-fit: cover;
         }
     }
@@ -38,11 +39,11 @@
 
     display: flex;
     flex-direction: column;
-    gap: space(8);
+    gap: tools.space(4);
 
     &__item {
         display: flex;
-        gap: space(5);
+        gap: tools.space(5);
     }
     &__icon {
         font-size: 30px !important;

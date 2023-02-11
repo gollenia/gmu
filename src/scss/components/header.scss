@@ -48,9 +48,7 @@
         display: inline-block;
         background: var(--primary);
         margin-bottom: 3rem;
-        margin-left: 1.5rem;
         color: var(--primary-contrast);
-
         padding: 0.5rem 1rem;
         text-align: right;
 
@@ -146,6 +144,21 @@
         img {
             aspect-ratio: unset !important;
             object-fit: unset;
+        }
+    }
+}
+
+@include tools.media-breakpoint(lg) {
+    .header {
+        &__title {
+            margin-left: -1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+
+            h2 {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
     }
 }

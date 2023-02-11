@@ -6,8 +6,6 @@ body {
     margin: auto;
     font-family: "Inria Sans", sans-serif;
     background-color: var(--gray-100);
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 @include tools.media-breakpoint(xl) {
