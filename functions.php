@@ -6,13 +6,6 @@ add_action( 'wp_enqueue_scripts', function() use($script) {
 		$script['version']
 	);
 	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' 	);
-	wp_enqueue_style( 'inria', 'https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap' 	);
-} );
-
-add_action( 'admin_enqueue_scripts', function() use($script) {
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/admin.css' , [],
-		$script['version']
-	);
 } );
 
 add_action( 'wp_head', 'ilc_favicon');
@@ -33,7 +26,9 @@ function add_event_template()
 				['events-manager/details', []],
 			]]
 		]],
-		['core/separator']
+		['core/separator'],
+		['core/group', ['type' => 'flex', 'flexWrap' => 'nowrap'], [['events-manager/booking', ['title' => 'Anmeldung']]]]
 	];
 }
+
 add_action( 'init', 'add_event_template', 1000 );

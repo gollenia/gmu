@@ -1,22 +1,6 @@
 {
     "version": 2,
-    "customTemplates": [
-        {
-            "name": "blank",
-            "title": "Blank",
-            "postTypes": ["page", "post"]
-        },
-        {
-            "name": "no-header",
-            "title": "Kein Seitenkopf",
-            "postTypes": ["page", "post"]
-        },
-        {
-            "name": "single-event",
-            "title": "Event",
-            "postTypes": ["event"]
-        }
-    ],
+
     "settings": {
         "appearanceTools": true,
         "radius": true,
@@ -36,7 +20,54 @@
         },
         "typography": {
             "fluid": true,
-            "letterSpacing": true
+            "letterSpacing": true,
+            "fontFamilies": [
+                {
+                    "fontFamily": "Inria",
+                    "slug": "inria",
+                    "name": "inria",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Inria",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/inria-sans.woff2"]
+                        },
+
+                        {
+                            "fontFamily": "Inria",
+                            "fontWeight": "400",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/inria-sans-italic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Inria",
+                            "fontWeight": "600",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/inria-sans-bold.woff2"]
+                        }
+                    ]
+                },
+                {
+                    "fontFamily": "Tahu!",
+                    "slug": "tahu",
+                    "name": "Tahu!",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Tahu!",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/tahu.woff2"]
+                        }
+                    ]
+                }
+            ]
         }
     },
     "styles": {
@@ -65,6 +96,23 @@
             "name": "test",
             "title": "Footer",
             "area": "footer"
+        }
+    ],
+    "customTemplates": [
+        {
+            "name": "blank",
+            "title": "Blank",
+            "postTypes": ["page", "post"]
+        },
+        {
+            "name": "no-header",
+            "title": "Kein Seitenkopf",
+            "postTypes": ["page", "post"]
+        },
+        {
+            "name": "single-event",
+            "title": "Event",
+            "postTypes": ["event"]
         }
     ]
 }

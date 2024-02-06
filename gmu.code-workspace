@@ -1,0 +1,14 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../blueprint"
+		},
+		{
+			"path": "../kids-team"
+		}
+	],
+    "settings": {}
+}
