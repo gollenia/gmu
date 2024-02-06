@@ -73,9 +73,12 @@
     "styles": {
         "spacing": {
             "margin": {
-                "right": "auto",
-                "bottom": "60px",
-                "left": "auto"
+                "bottom": "60px"
+            },
+            "padding": {
+                "left": "1rem",
+                "right": "1rem",
+                "bottom": "2rem"
             }
         },
         "elements": {
