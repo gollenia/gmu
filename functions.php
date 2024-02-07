@@ -21,6 +21,9 @@ add_action('admin_enqueue_scripts', function () use ($script) {
 add_action( 'wp_head', 'ilc_favicon');
 function ilc_favicon(){
     echo "<link rel='shortcut icon' href='" . get_stylesheet_directory_uri() . "/favicon.png' />" . "\n";
+	echo "<style> root: {
+		var(--primary): var(--wp--preset--color--primary);
+	} </style>";
 }
 
 
