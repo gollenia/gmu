@@ -110,6 +110,12 @@
         background: var(--wp--preset--color--primary);
         color: #fff !important;
     }
+
+    &:has(input[value]:not([value=""])) {
+        font-size: 0.75rem;
+        margin-top: -19px;
+        background: #999;
+    }
 }
 
 .input {
