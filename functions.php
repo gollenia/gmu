@@ -22,7 +22,7 @@ add_action( 'wp_head', 'ilc_favicon');
 function ilc_favicon(){
     echo "<link rel='shortcut icon' href='" . get_stylesheet_directory_uri() . "/favicon.png' />" . "\n";
 	echo "<style> :root {
-		--primary: var(--wp--preset--color--primary);
+		--primary: #0063dd;
 		--secondary: var(--wp--preset--color--secondary);
 		--primary-contrast: #ffffff;
 	} </style>";
