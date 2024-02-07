@@ -1,12 +1,13 @@
 .description {
-    &__image, img {
+    &__image,
+    img {
         height: space(12);
-        
+
         flex-shrink: 0;
         width: space(12);
-        
+
         height: space(12);
-        
+
         display: grid;
         place-items: center;
 
@@ -18,7 +19,7 @@
     }
     &--cards {
         .description__item {
-            padding: .5rem;
+            padding: 0.5rem;
             background: white;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
         }
@@ -29,13 +30,11 @@
 
     &--dividers {
         .description__item:not(:last-child) {
-            border-bottom: 4px dotted rgba(0,0,0,0.1);
+            border-bottom: 4px dotted rgba(0, 0, 0, 0.1);
             padding-bottom: 1rem;
             margin-bottom: -1rem;
         }
     }
-
-	
 
     display: flex;
     flex-direction: column;
@@ -44,7 +43,6 @@
     &__item {
         display: flex;
         gap: space(5);
-		
     }
     &__icon {
         font-size: 30px !important;
@@ -62,16 +60,16 @@
             color: var(--primary-page);
             width: 2rem;
             height: 2rem;
-            
-			border: 2px solid var(--primary-page);
-            
+
+            border: 2px solid var(--primary-page);
+
             display: grid;
             place-items: center;
-            margin-top: .5rem;
+            margin-top: 0.5rem;
             transition: all 100ms ease-in-out;
 
             &:hover {
-				background: var(--primary-page);
+                background: var(--primary-page);
                 color: var(--primary-page-contrast);
             }
 
@@ -81,64 +79,42 @@
         }
     }
 
-	&__date {
-		display: flex;
-		flex-direction: column-reverse;
-		margin: 0;
-		justify-items: center;
-		align-items: center;
-		width: 3rem;
-		padding-right: 1rem;
-		border-right: 1px solid var(--black);
+    &__date {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        justify-items: center;
+        align-items: center;
+        width: 3rem;
+        padding-right: 1rem;
+        border-right: 1px solid var(--black);
+    }
 
-		.date__day--short {
-			font-size: .75rem;
-			background: var(--black);
-			padding: 0 .5rem;
-			margin-bottom: .25rem;
-			color: var(--black-contrast)
-		}
-
-		.date__day--numeric {
-			font-size: 2rem;
-			padding: 0;
-			line-height: 2rem;
-			margin-top: -6px;
-		}
-
-		.date__day--long, .date__month--long, .date__month--numeric, .date__month--short {
-			display: none;
-		}
-
-	}
-
-	&__subtitle {
-		font-size: 0.75rem;
-		font-weight: bold;
-		color: var(--gray-700);
-		display: flex;
-		gap: 1rem;
-		span {
-			position: relative;
-			&:not(:first-child)::before {
-				position: absolute;
-				height: 100%;
-				left: calc(-0.5rem - 4px);
-				content: "";
-				width: 8px;
-				height: 8px;
-				border-radius: 99px;
-				background-color: var(--gray-700);
-				bottom: 50%;
-				top: 50%;
-				/* left: 50%; */
-				transform: translate(0, -50%);
-			}
-		}
-	}
+    &__subtitle {
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: var(--gray-700);
+        display: flex;
+        gap: 1rem;
+        span {
+            position: relative;
+            &:not(:first-child)::before {
+                position: absolute;
+                height: 100%;
+                left: calc(-0.5rem - 4px);
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 99px;
+                background-color: var(--gray-700);
+                bottom: 50%;
+                top: 50%;
+                /* left: 50%; */
+                transform: translate(0, -50%);
+            }
+        }
+    }
 }
-
-
 
 .dark {
     .description__image {
@@ -147,20 +123,20 @@
     .description__icon {
         color: #ffffffcc;
     }
-	a.description__item {
-		color: white;
-		&:hover {
-			color: var(--primary-page)
-		}
-	}
+    a.description__item {
+        color: white;
+        &:hover {
+            color: var(--primary-page);
+        }
+    }
 }
 
 a.description__item {
-	color: black;
-	&:hover {
-		color: var(--primary-page);
-		.date__day--short {
-			background-color: var(--primary-page);
-		}
-	}
+    color: black;
+    &:hover {
+        color: var(--primary-page);
+        .date__day--short {
+            background-color: var(--primary-page);
+        }
+    }
 }
