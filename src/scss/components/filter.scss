@@ -24,14 +24,14 @@
         cursor: pointer;
 
         &:hover {
-            border: 2px solid var(--primary);
-            color: var(--primary);
+            border: 2px solid var(--wp--preset--color--primary);
+            color: var(--wp--preset--color--primary);
         }
 
         &--active {
-            border: 2px solid var(--primary);
+            border: 2px solid var(--wp--preset--color--primary);
             color: var(--primary-contrast);
-            background-color: var(--primary);
+            background-color: var(--wp--preset--color--primary);
 
             &:hover {
                 color: var(--primary-contrast);

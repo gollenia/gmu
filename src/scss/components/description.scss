@@ -70,7 +70,7 @@
             transition: all 100ms ease-in-out;
 
             &:hover {
-                background: var(--primary);
+                background: var(--wp--preset--color--primary);
                 color: var(--primary-contrast);
             }
 
@@ -126,7 +126,7 @@
     a.description__item {
         color: white;
         &:hover {
-            color: var(--primary);
+            color: var(--wp--preset--color--primary);
         }
     }
 }
@@ -134,9 +134,9 @@
 a.description__item {
     color: black;
     &:hover {
-        color: var(--primary);
+        color: var(--wp--preset--color--primary);
         .date__day--short {
-            background-color: var(--primary);
+            background-color: var(--wp--preset--color--primary);
         }
     }
 }

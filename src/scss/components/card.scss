@@ -158,7 +158,7 @@
     &--primary {
         .card__badge,
         .card__label {
-            background-color: var(--primary);
+            background-color: var(--wp--preset--color--primary);
             color: var(--primary-contrast);
         }
     }

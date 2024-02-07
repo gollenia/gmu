@@ -5,8 +5,9 @@ add_action( 'wp_enqueue_scripts', function() use($script) {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' , [],
 		$script['version']
 	);
-	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' 	);
+	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' 	);
 } );
+
 
 add_action('admin_enqueue_scripts', function () use ($script) {
 	wp_enqueue_style(
@@ -34,8 +35,7 @@ function add_event_template()
 			['ctx-blocks/grid-column', ['widthLarge' => 1], [
 				['events-manager/details', []],
 			]]
-		]],
-		['core/separator']
+		]]
 	];
 }
 add_action( 'init', 'add_event_template', 1000 );

@@ -34,7 +34,7 @@ table {
     }
 
     tr.tr--primary:not(:last-child)::after {
-        border-bottom: 4px dotted var(--primary);
+        border-bottom: 4px dotted var(--wp--preset--color--primary);
     }
 
     tr.tr--success:not(:last-child)::after {
@@ -54,7 +54,7 @@ table {
 
 .table--primary {
     tr:not(:last-child)::after {
-        border-bottom: 4px dotted var(--primary);
+        border-bottom: 4px dotted var(--wp--preset--color--primary);
     }
 }
 

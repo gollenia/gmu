@@ -3,7 +3,7 @@
 .spinning-loader {
     width: 30px;
     height: 30px;
-    border: 5px solid var(--primary);
+    border: 5px solid var(--wp--preset--color--primary);
     border-left-color: var(--primary-light);
     border-radius: 50%;
     background: transparent;
@@ -30,7 +30,7 @@
     display: block;
     margin: 15px auto;
     position: relative;
-    color: var(--primary);
+    color: var(--wp--preset--color--primary);
     box-sizing: border-box;
     animation: animloader 1s linear infinite alternate;
 }

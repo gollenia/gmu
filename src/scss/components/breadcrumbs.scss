@@ -14,7 +14,7 @@
 
     &__item {
         font-size: 0.75rem;
-        background-color: var(--primary);
+        background-color: var(--wp--preset--color--primary);
         color: var(--primary-contrast);
         padding: 0.125rem tools.space(2);
         transition: all 300ms ease-in-out;

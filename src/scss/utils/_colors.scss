@@ -1,7 +1,7 @@
 @use "../settings/colors";
 
 .fill-primary {
-    fill: var(--primary);
+    fill: var(--wp--preset--color--primary);
 }
 
 .fill-secondary {
