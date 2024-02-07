@@ -146,17 +146,12 @@
         {
             "name": "blank",
             "title": "Blank",
-            "postTypes": ["page", "post"]
+            "postTypes": ["page", "post", "event"]
         },
         {
             "name": "no-header",
-            "title": "Kein Seitenkopf",
-            "postTypes": ["page", "post"]
-        },
-        {
-            "name": "single-event",
-            "title": "Event",
-            "postTypes": ["event"]
+            "title": "Kein Titelbild",
+            "postTypes": ["page", "post", "event"]
         }
     ]
 }

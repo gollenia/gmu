@@ -9,7 +9,7 @@
         <div class="wp-block-group">
             <!-- wp:ctx-blocks/svg {"url":"https://gmu.at/wp-content/uploads/2022/03/logo.svg","id":1437,"width":64,"height":76} /-->
 
-            <!-- wp:site-title {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"black","fontSize":"medium"} /-->
+            <!-- wp:site-title {"style":{"elements":{"link":{"color":{"text":"var:preset|color|accent"}}}},"textColor":"black","fontSize":"medium"} /-->
         </div>
         <!-- /wp:group -->
 
@@ -19,9 +19,9 @@
 
     <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
     <div class="wp-block-group alignfull">
-        <!-- wp:cover {"useFeaturedImage":true,"dimRatio":0,"overlayColor":"black","focalPoint":{"x":0.5,"y":0.5},"minHeight":497,"minHeightUnit":"px","contentPosition":"center left","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}}}} -->
+        <!-- wp:cover {"useFeaturedImage":true,"dimRatio":0,"overlayColor":"black","focalPoint":{"x":0.5,"y":0.5},"minHeight":497,"minHeightUnit":"px","contentPosition":"center left","isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}}}} -->
         <div
-            class="wp-block-cover alignfull is-light has-custom-content-position is-position-center-left"
+            class="wp-block-cover alignwide is-light has-custom-content-position is-position-center-left"
             style="
                 padding-top: var(--wp--preset--spacing--30);
                 padding-right: var(--wp--preset--spacing--30);
@@ -51,11 +51,19 @@
             </div>
         </div>
         <!-- /wp:cover -->
+
+        <!-- wp:spacer {"height":"58px"} -->
+        <div
+            style="height: 58px"
+            aria-hidden="true"
+            class="wp-block-spacer"
+        ></div>
+        <!-- /wp:spacer -->
     </div>
     <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 
-<!-- wp:post-content /-->
+<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
 
 <!-- wp:template-part {"slug":"footer","theme":"gmu"} /-->
