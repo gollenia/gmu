@@ -68,17 +68,16 @@
 .combobox,
 .help {
     label {
-        margin-top: -12px;
+        margin-top: 9px;
         display: inline-block;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
         height: max-content;
         padding-top: 1px;
         padding-bottom: 1px;
-        border-radius: tools.rounded("sm");
-        font-size: 0.75rem;
-        background: tools.gray(400);
+        font-size: 0.85rem;
+        background: #bbbbbb;
         transition: all 300ms ease-in-out;
         white-space: nowrap;
         position: absolute;
@@ -103,6 +102,11 @@
             padding-right: 5px;
             border-bottom-right-radius: 0.5rem;
         }
+    }
+
+    &:focus label {
+        font-size: 0.75rem;
+        margin-top: -12px;
     }
 }
 
