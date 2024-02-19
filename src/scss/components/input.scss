@@ -115,14 +115,14 @@
         font-size: 0.75rem;
         margin-top: -19px;
         background: rgb(169,201,63);
-        color: #fff
+        color: #fff;
     }
 
     &:has(:user-invalid) label {
         font-size: 0.75rem;
         margin-top: -19px;
         background: rgb(240,20,63);
-        color: #fff   
+        color: #fff;   
     }
 }
 
@@ -150,8 +150,8 @@
         }
 
         &:not(:focus):user-invalid {
-            border-color: rgb(240,20,63)
-            color: rgb(240,20,63)
+            border-color: rgb(240,20,63);
+            color: rgb(240,20,63);
         }
     }
 
